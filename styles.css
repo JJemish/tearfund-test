@@ -1,0 +1,253 @@
+  * {
+      box-sizing: border-box;
+  }
+
+  body {
+      margin: 0;
+      background-image: url('images/whereyourmoneygoes-desktop.png');
+      background-size: 100% auto;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: auto;
+      padding: 20px;
+      min-height: 100vh;
+  }
+
+  .container {
+      width: 100%;
+      max-width: 1200px;
+      display: flex;
+      justify-content: flex-end;
+  }
+
+  .card {
+      margin: 50px 0 0 0;
+      width: 350px;
+      padding: 25px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-title {
+      margin: 0;
+      font-size: 20px;
+      text-align: left;
+  }
+
+  .card-text {
+      margin: 10px 0;
+      line-height: 1.4;
+      font-size: 14px;
+      text-align: justify;
+      width: 300px;
+      padding: 5px;
+  }
+
+  .button-container {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 10px 0;
+  }
+
+  hr.green {
+      border: 4px solid #008CAA;
+      width: 34px;
+      margin: 7px 0 0 0;
+  }
+
+  .button {
+      border-radius: 8px;
+      padding: 10px;
+      border: none;
+      color: white;
+      cursor: pointer;
+      margin-right: 6px;
+      border-radius: 6px;
+  }
+
+  .details {
+      margin-top: 10px;
+      line-height: 1.5;
+      padding: 10px;
+      text-align: justify;
+      font-size: 14px;
+      color: white;
+      border-radius: 8px;
+      width: 300px;
+      transition: background-color 0.3s ease;
+  }
+
+  .button-left {
+      background-color: #6F3F87;
+      color: #FFF;
+      width: 50%;
+  }
+
+  .button-right {
+      background-color: #173145;
+      color: #FFF;
+      width: 50%;
+  }
+
+  @font-face {
+      font-family: 'FSMe';
+      src: url('fonts/FSMeWeb-Regular_rcfffc.woff2') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'FSMe-bold';
+    src: url('fonts/FSMeWeb-Bold_ce2eoa.woff2') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+  
+  .fsme {
+      font-family: 'FSMe', sans-serif;
+  }
+
+  .fsme-bold {
+    font-family: 'FSMe-bold', sans-serif;
+}
+
+
+/* Mobile screens  */
+
+  @media only screen and (max-width: 767px){
+      body {
+          background-image: url('images/WhereYourMoneyGoes-Mobile.png');
+          margin: 0;
+          padding: 0;
+          height: 100vh;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          align-items: stretch;
+      }
+
+      .container {
+          margin-top: 30vh;
+          margin-bottom: 20px;
+          justify-content: center;
+      }
+
+      .card {
+          margin: 50px 0 0 0;
+          width: 350px;
+          padding: 25px;
+          border-radius: 8px;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          height:535px;
+      }
+
+      .card-title {
+          margin: 0;
+          font-size: 18px;
+          text-align: left;
+          padding: 5px 0;
+      }
+
+      .card-text {
+          margin: 10px 0;
+          text-align: center;
+          font-size: 18px;
+          text-align: justify;
+      }
+
+      .details {
+          margin-top: 5px;
+          padding: 5px;
+          text-align: justify;
+          height: 145px;
+          font-size: 13px;
+          color: white;
+          border-radius: 8px;
+          width: 300px;
+          transition: background-color 0.3s ease;
+      }
+
+      .bw {
+          inline-size: 150px;
+          overflow-wrap: break-word;
+      }
+  }
+
+  /* Tablet screen */
+  @media only screen and (min-width: 768px) and (max-width: 1024px)  {
+      body {
+          background-image: url('images/WhereYourMoneyGoes-desktop.png');
+          margin: 0;
+          padding: 0;
+          background-size: cover;
+          background-position: 36% 35%;
+          width: 100%;
+          height: 100vh;
+      }
+
+      .container {
+          width: 100%;
+          max-width: 1200px;
+          display: flex;
+          justify-content: flex-end;
+          margin-top: 30vh;
+      }
+
+      .card {
+          margin: -90px 20px 0 0;
+          width: 500px;
+          padding: 25px;
+          height: 470px;
+          border-radius: 8px;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .card-title {
+          margin: 0;
+          font-size: 24px;
+          text-align: left;
+      }
+
+      .button-container {
+          display: flex;
+          justify-content: space-between;
+          margin: 15px 0;
+      }
+
+      .card-text {
+          width: 440px;
+          margin: 10px 0;
+          text-align: center;
+          font-size: 18px;
+          text-align: justify;
+          line-height: 1.6;
+      }
+
+      .details {
+          margin-top: 10px;
+          line-height: 1.5;
+          padding: 10px;
+          text-align: justify;
+          font-size: 14px;
+          color: white;
+          border-radius: 8px;
+          width: 445px;
+          transition: background-color 0.3s ease;
+      }
+
+      .button-left {
+          background-color: #6F3F87;
+          color: #FFF;
+          width: 40vw;
+      }
+
+      .button-right {
+          background-color: #173145;
+          color: #FFF;
+          width: 40vw;
+      }
+  }
